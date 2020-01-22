@@ -54,7 +54,7 @@ namespace MyShop.Services
 
             return cart;
         }
-        public void AddtoCart(HttpContextBase httpContext, string productID){
+        public void AddToCart(HttpContextBase httpContext, string productID){
             Cart cart = GetCart(httpContext, true);
             CartItem item = cart.CartItems.FirstOrDefault(i=>i.ProductID==productID);
 

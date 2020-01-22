@@ -10,7 +10,7 @@ namespace MyShop.Core.Contracts
 {
     public interface ICartService
     {
-        void AddtoCart(HttpContextBase httpContext, string productID);
+        void AddToCart(HttpContextBase httpContext, string productID);
         void RemoveFromCart(HttpContextBase httpContext, string itemID);
         List<CartItemViewModel> GetCartItems(HttpContextBase httpContext);
         CartSummaryViewModel GetCartSummary(HttpContextBase httpContext);
