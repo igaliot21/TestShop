@@ -119,5 +119,10 @@ namespace MyShop.Services
                 return model;
             }
         }
+        public void clearCart(HttpContextBase httpContext){
+            Cart cart = GetCart(httpContext,false);
+            cart.CartItems.Clear();
+            cartContext.Commit();
+        }
     }
 }
