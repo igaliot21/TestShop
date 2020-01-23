@@ -43,7 +43,7 @@ namespace MyShop.WebUI.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Checkout(Order order)
+        public ActionResult Checkout(Order order) 
         {
             var cartItems = cartService.GetCartItems(this.HttpContext);
             order.OrderStatus = "Order created";

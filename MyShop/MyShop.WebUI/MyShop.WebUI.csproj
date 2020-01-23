@@ -366,6 +366,8 @@
     <Content Include="Views\Cart\Index_old.cshtml" />
     <Content Include="Views\Cart\CartSummary.cshtml" />
     <Content Include="Views\Cart\Index.cshtml" />
+    <Content Include="Views\Cart\Checkout.cshtml" />
+    <Content Include="Views\Cart\Thankyou.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

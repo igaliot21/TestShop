@@ -48,5 +48,10 @@
     <tr>
         <td colspan="4" style="text-align:right"><strong>Cart Total:</strong></td>
         <td>@String.Format("{0:c}", (from p in Model select p.Price * p.Quantity).Sum())</td>
+
+    </tr>
+    <tr>
+        <td colspan="4" style="text-align:right"></td>
+        <td><a href="@Url.Action("Checkout", "Cart")" class="btn btn-warning">Checkout</a></td>
     </tr>
 </table>
